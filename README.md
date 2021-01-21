@@ -10,3 +10,5 @@
 4.concat-advance-tool：大量加密二进制文件的重组   
 5.split-by-group-tool: 大加密二进制文件的分组分割   
 6.concat-by-group-tool：大量分组的二进制文件的重组   
+7.split-by-group-advance-tool: 超大加密二进制文件的分组分割   
+8.concat-by-group-advance-tool：超大量分组的二进制文件的重组   
