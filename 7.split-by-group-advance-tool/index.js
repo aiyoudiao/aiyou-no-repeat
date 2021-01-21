@@ -29,6 +29,7 @@ let dirName = ''
 fr.on('data', chunk => {
   const str = Buffer.concat([chunk]).toString("hex")
   dirName = everyWrite(dirName , str)
+  console.log('已写入' + index + '个文件，当前分组为：' + dirName)
 })
 
 fr.on('end', () => {
@@ -73,8 +74,6 @@ function everyWrite (subDir, content ) {
     } catch (error) {
       console.error(error)
     }
-  
-    console.log('当前正在写入第' + index + '个文件，所在分组为：' + subDir)
   }
   return subDir 
 }
